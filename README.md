@@ -1,6 +1,6 @@
 # De Novo Genome Assembly of *E. coli* O157:H7: Illumina-Only vs. Illumina+Nanopore Hybrid
 
-MSc Bioinformatics coursework (Foundations of Bioinformatics — NGS Sequence Analysis, University of Glasgow) comparing a short-read-only assembly against a short+long-read hybrid assembly of the *E. coli* O157:H7 genome, to test whether adding Oxford Nanopore long reads improves assembly completeness and/or accuracy.
+Comparing a short-read-only assembly against a short+long-read hybrid assembly of the *E. coli* O157:H7 genome, to test whether adding Oxford Nanopore long reads improves assembly completeness and/or accuracy.
 
 ## Project brief
 
@@ -12,7 +12,7 @@ Using paired-end Illumina MiSeq short reads and Oxford Nanopore MinION long read
 4. Assemble the trimmed Illumina reads **together with** the Nanopore long reads (SPAdes) and evaluate again (QUAST)
 5. Compare the two assemblies' key metrics and judge which is more suitable for downstream use
 
-All steps were run on the University of Glasgow's Galaxy server (point-and-click NGS workflow platform — no local scripting was involved in this assignment). The original assignment brief is included at [`docs/assignment_brief.pdf`](docs/assignment_brief.pdf).
+All steps were run on a Galaxy server (point-and-click NGS workflow platform — no local scripting was involved). The original task brief is included at [`docs/task_brief.pdf`](docs/task_brief.pdf).
 
 ## Repository contents
 
@@ -20,7 +20,7 @@ All steps were run on the University of Glasgow's Galaxy server (point-and-click
 report/
   report.pdf   # Full mini scientific paper: summary, intro, methods, results, discussion, conclusion, references
 docs/
-  assignment_brief.pdf   # Original course assignment instructions
+  task_brief.pdf   # Original task instructions
 ```
 
 ## Pipeline
@@ -51,4 +51,4 @@ docs/
 
 ## Tools
 
-Galaxy (University of Glasgow server), FastQC, Trim Galore, SPAdes, QUAST.
+Galaxy, FastQC, Trim Galore, SPAdes, QUAST.
